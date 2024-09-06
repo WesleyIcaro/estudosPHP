@@ -17,13 +17,13 @@
 
         if(isset($_POST['random'])) {
             $sorteio = rand(0, 100);
-            echo "<p>O valor gerado foi $sorteio</p>";
+            echo "<p>O valor gerado foi <strong>$sorteio</strong></p>";
         }        
 
         ?>
 
-        <form method="post">            
-            <button type="submit" name="random">Gerar outro</button>
+        <form method="post">
+            <button type="submit" name="random">Gerar número</button>
         </form>
     </main>
 </body>
