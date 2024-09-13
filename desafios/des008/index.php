@@ -25,13 +25,13 @@
         <h1>Médias Aritméticas</h1>
         <form action="<?= $_SERVER['PHP_SELF'] ?>" method="get">
             <label for="valor1">1º Valor</label>
-            <input type="number" name="valor1" id="valor1" value="<?= $valor1 ?>" step="0.1">
+            <input type="number" name="valor1" id="valor1" value="<?= $valor1 ?>" step="0.1" required>
             <label for="peso1">1º Peso</label>
-            <input type="number" name="peso1" id="peso1" value="<?= $peso1 ?>">
+            <input type="number" name="peso1" id="peso1" value="<?= $peso1 ?>" min="1" required>
             <label for="valor2">2º Valor</label>
-            <input type="number" name="valor2" id="valor2" value="<?= $valor2 ?>" step="0.1">
+            <input type="number" name="valor2" id="valor2" value="<?= $valor2 ?>" step="0.1" required>
             <label for="peso2">2º Peso</label>
-            <input type="number" name="peso2" id="peso2" value="<?= $peso2 ?>">
+            <input type="number" name="peso2" id="peso2" value="<?= $peso2 ?>" min="1" required>
             <input type="submit" value="Calcular Médias">
         </form>
     </main>
